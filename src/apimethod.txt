@@ -1,0 +1,106 @@
+// const todoURL = "http://localhost:3001/api/todo/"
+
+  // function handleAdd(data) {
+  //   if (!data || data === "") {
+  //     alert("Please enter to do")
+  //   }
+  //   else {
+  //     axios.post(todoURL, { item: data })
+  //       .then((res) => {
+  //         setUpdateTrigger(!updateTrigger)
+  //       })
+  //       .catch((err) => {
+  //         console.log(err)
+  //       })
+  //     setText("");
+  //   }
+  // }
+
+  // function handleComplete(id, iscompleted) {
+  //   const completed = iscompleted = true;
+  //   axios.put(`${todoURL}completed/${id}`, { completed })
+  //     .then((res) => {
+  //       setUpdateTrigger(!updateTrigger);
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //     })
+  //   const completedTodo = todo.find((todo) => todo._id === id);
+  //   if (completedTodo) {
+  //     setTodo((prevTodos) => prevTodos.filter((todo) => todo._id !== id));
+  //   }
+  // }
+
+  // function handleEdit(id, item) {
+  //   setEdit(id)
+  //   setUpdatedText(item);
+  // }
+
+  // function handleUpdateTodo(id) {
+  //   let updatedItem = { item: updatedText };
+  //   axios.put(`${todoURL}${id}`, updatedItem)
+  //     .then((res) => {
+  //       setUpdateTrigger(!updateTrigger);
+  //       setEdit("");
+  //     })
+  //     .catch((err) => {
+  //       console.log(err)
+  //     })
+  // }
+
+  // function handleDel(id) {
+  //   axios.delete(`${todoURL}${id}`)
+  //     .then((res) => {
+  //       setUpdateTrigger(!updateTrigger)
+  //     })
+  //     .catch((err) => {
+  //       console.log(err)
+  //     })
+  // }
+
+  // function handleDeleteAll() {
+  //   axios.delete(todoURL)
+  //     .then((res) => {
+  //       setUpdateTrigger(!updateTrigger);
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //     })
+  // }
+
+  // function handleDelCompTodo(id) {
+  //   axios.delete(`${todoURL}completed/${id}`)
+  //     .then((res) => {
+  //       setUpdateTrigger(!updateTrigger)
+  //     })
+  //     .catch((err) => {
+  //       console.log(err)
+  //     })
+  // }
+
+  // function handleClearAll() {
+  //   axios.delete(`${todoURL}completed/delete/deleteall`)
+  //     .then((res) => {
+  //       setUpdateTrigger(!updateTrigger);
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //     });
+  // }
+
+  // useEffect(() => {
+  //   axios.get(todoURL)
+  //     .then((res) => {
+  //       setTodo(res.data.data);
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //     })
+  //   axios.get(`${todoURL}completed`)
+  //     .then((res) => {
+  //       setCompleteTodos(res.data.data);
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //     });
+  // }, [updateTrigger])
